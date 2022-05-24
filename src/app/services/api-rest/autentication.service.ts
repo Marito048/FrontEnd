@@ -9,8 +9,8 @@ import { LoginService } from './login.service';
 })
 export class AutenticationService {
 
-  url: string = "https://comunidad-apirest.herokuapp.com/api/login";
-  url2: string = "https://error-pueblada-api.herokuapp.com/api/login"
+  //url: string = "https://comunidad-apirest.herokuapp.com/api/login";
+  url2: string = "https://api-rest-portfolio-arpr.herokuapp.com/api/login"
  
   user: User = { username: "", password: "", token: "" } ;
 
@@ -44,7 +44,7 @@ export class AutenticationService {
     this.user.username = username;
     this.user.password = password;
     console.log("llega aca?")
-      return this.http.post<any>(this.url, this.user)
+      return this.http.post<any>(this.url2, this.user)
           .pipe(map(user => {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
               sessionStorage.setItem('currentUser', JSON.stringify(user));

@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class ProyectosService {
 
-  url2: string = "https://comunidad-apirest.herokuapp.com/api/login";
-  url: string = "https://error-pueblada-api.herokuapp.com/api/login"
+  url2: string = "https://api-rest-portfolio-arpr.herokuapp.com/api/login";
+  //url: string = "https://error-pueblada-api.herokuapp.com/api/login"
   
   
   constructor(private http: HttpClient) {}
