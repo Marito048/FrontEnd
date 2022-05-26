@@ -1,7 +1,22 @@
 div#first-card {
     padding: 1rem;
+    margin: 5px;
+    justify-content: row;
+    
+    
+}
+.card{
+    border-radius: 0ch 0ch 5ch 5ch;
+    border-color: rgb(66, 18, 66);
+}
+.perfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin: 1rem;
 }
+
 
 .info-text {
     padding: 0 1rem;
@@ -29,6 +44,7 @@ img.card-img-top {
     z-index: 1;
     margin: -5rem 0 0 1rem;
     border: 3px solid #fff;
+    margin-top: -110px;
 }
 
 .card-title {

@@ -1,3 +1,4 @@
+
 <div class="container" >
     <form [formGroup]="formulario" class="m-5" (ngSubmit)="iniciarSesion()">
         <div class="mb-3">
@@ -6,7 +7,7 @@
             [ngClass]="{'is-invalid': username?.errors && username?.touched, 'is-valid': username?.valid && username?.touched}"
             class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             <div *ngIf="username?.errors && username?.touched">
-                <p *ngIf="username?.hasError('required')" class="text-danger">
+                <p *ngIf="username?.hasError('required')" class="">
                     El usuario es requerido
                 </p>              
             </div>

@@ -15,7 +15,6 @@ export class ExperienciaComponent implements OnInit {
 
   login:any;
   experiencia!: Laboral [] ;
-  
   expNueva:boolean = true;
 
   getById(id: number) {

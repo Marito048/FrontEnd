@@ -31,6 +31,7 @@ import { ProfileModalComponent } from './components/modales/profile-modal/profil
 import { ReactiveFormsModule } from '@angular/forms';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { InterceptorService } from './services/api-rest/interceptor.service';
+import { BannerModalComponent } from './components/modales/banner-modal/banner-modal.component';
 
 
 
@@ -59,7 +60,8 @@ import { InterceptorService } from './services/api-rest/interceptor.service';
     AboutModalComponent,
     PagErrorComponent,
     ProfileModalComponent,
-    IniciarSesionComponent
+    IniciarSesionComponent,
+    BannerModalComponent
     
   ],
   imports: [

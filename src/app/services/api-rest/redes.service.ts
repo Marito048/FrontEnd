@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class RedesService {
 
-  url2: string = "https://api-rest-portfolio-arpr.herokuapp.com/api/login";
+  url2: string = "https://api-rest-portfolio-arpr.herokuapp.com/api";
   //url: string = "https://error-pueblada-api.herokuapp.com/api/login"
  
   

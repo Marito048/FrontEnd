@@ -1,0 +1,7 @@
+.arriba{
+    margin-top: 0;   
+}
+.mat-card{
+    --color-border: rgb(66, 18, 66);
+    --size-border: 5px;
+}

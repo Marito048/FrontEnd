@@ -1,6 +1,9 @@
 
 
 #about {
-    margin: 1rem;
+    margin: 5px;
     padding: 1rem;
+    border-radius: 35px;
+    border-color: rgb(66, 18, 66);
+
 }

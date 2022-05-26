@@ -1,8 +1,8 @@
 .educacion {
-     background: rgb(124, 219, 124);
-      padding: 6px;
-      border-radius: 20px;
-    } 
+    margin: 5px;
+    border-radius: 35px;
+    border-color: rgb(66, 18, 66);
+} 
 h1{
     text-align: center;
     font-size: xx-large;

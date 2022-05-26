@@ -26,8 +26,10 @@
 } */
 /* La otra forma */
 .experiencia { 
-    background: sandybrown;
+    margin: 5px;
     padding: 1px;
+    border-radius: 35px;
+    border-color:  rgb(66, 18, 66);
 }
 #experiencia {
     padding: 0;
