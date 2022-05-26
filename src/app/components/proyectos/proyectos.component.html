@@ -14,7 +14,7 @@
           <h5 class="card-title">{{Pro.titulo}}</h5><app-deletebutton (click)="borrarProyecto (Pro.idproyecto)" *ngIf="login"></app-deletebutton ><app-editbutton *ngIf="login" (click)="abrirModal(Pro.idproyecto)"></app-editbutton>
         </div>
           <p class="card-text">{{Pro.descripcion}}</p>
-          <a href="www.github.com" class="btn btn-primary" target="_blank">Click here</a>
+          <a href="{{Pro.url}}" class="btn btn-primary" target="_blank">Click here</a>
         </div>
       </div>
     </div>
