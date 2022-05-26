@@ -1,0 +1,30 @@
+[debug] [2022-05-26T23:40:26.074Z] ----------------------------------------------------------------------
+[debug] [2022-05-26T23:40:26.077Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2022-05-26T23:40:26.078Z] CLI Version:   11.0.1
+[debug] [2022-05-26T23:40:26.078Z] Platform:      linux
+[debug] [2022-05-26T23:40:26.078Z] Node Version:  v16.14.0
+[debug] [2022-05-26T23:40:26.082Z] Time:          Thu May 26 2022 20:40:26 GMT-0300 (hora estándar de Argentina)
+[debug] [2022-05-26T23:40:26.083Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-26T23:40:26.182Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-26T23:40:26.183Z] > authorizing via signed-in user (estudio1802@gmail.com)
+[debug] [2022-05-26T23:40:26.184Z] [iam] checking project portfolio048 for permissions ["firebase.projects.get"]
+[debug] [2022-05-26T23:40:26.187Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio048:testIamPermissions [none]
+[debug] [2022-05-26T23:40:26.187Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio048:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-05-26T23:40:27.394Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio048:testIamPermissions 200
+[debug] [2022-05-26T23:40:27.395Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio048:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-05-26T23:40:27.396Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio048 [none]
+[debug] [2022-05-26T23:40:28.149Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio048 200
+[debug] [2022-05-26T23:40:28.150Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio048 {"projectId":"portfolio048","projectNumber":"199225883612","displayName":"portfolio048","name":"projects/portfolio048","resources":{"hostingSite":"portfolio048"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from '/home/mariogarciairastorza/Escritorio/PortfolioEntregar/FrontEnd'...
+[info] 
+[debug] [2022-05-26T23:40:28.154Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio048/sites 
+[debug] [2022-05-26T23:40:29.737Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio048/sites 200
+[debug] [2022-05-26T23:40:29.737Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio048/sites {"sites":[{"name":"projects/portfolio048/sites/portfolio048","defaultUrl":"https://portfolio048.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-05-26T23:40:29.738Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio048/webApps/-/config [none]
+[debug] [2022-05-26T23:40:31.065Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio048/webApps/-/config 200
+[debug] [2022-05-26T23:40:31.065Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio048/webApps/-/config {"projectId":"portfolio048","storageBucket":"portfolio048.appspot.com","apiKey":"AIzaSyAkFreQ6B0Ek27qjtFi5419WPO1LaWF24g","authDomain":"portfolio048.firebaseapp.com","messagingSenderId":"199225883612"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [26/May/2022:23:40:36 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (X11; Fedora; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/May/2022:23:40:36 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (X11; Fedora; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36\""}}
