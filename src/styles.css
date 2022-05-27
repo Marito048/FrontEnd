@@ -1,7 +1,7 @@
 
 
 body{
-  background-image: url(assets/img/pared_Skills.jpg) ;
+  /*background-image: url(assets/img/pared_Skills.jpg) ;*/
   display: flex;
 	flex-flow: column nowrap;
 }
