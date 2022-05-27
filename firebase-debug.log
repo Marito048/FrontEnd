@@ -1,0 +1,10 @@
+[debug] [2022-05-27T21:14:20.672Z] ----------------------------------------------------------------------
+[debug] [2022-05-27T21:14:20.675Z] Command:       /usr/bin/node /usr/local/bin/firebase login
+[debug] [2022-05-27T21:14:20.676Z] CLI Version:   11.0.1
+[debug] [2022-05-27T21:14:20.676Z] Platform:      linux
+[debug] [2022-05-27T21:14:20.676Z] Node Version:  v16.14.0
+[debug] [2022-05-27T21:14:20.677Z] Time:          Fri May 27 2022 18:14:20 GMT-0300 (hora estándar de Argentina)
+[debug] [2022-05-27T21:14:20.677Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
