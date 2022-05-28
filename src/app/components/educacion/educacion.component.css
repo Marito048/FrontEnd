@@ -1,5 +1,5 @@
 .educacion {
-    margin: 5px;
+    
     padding: 1rem;
     border-radius: 35px;
     border-color: rgb(66, 18, 66);
@@ -14,3 +14,12 @@ img{
     background-color: grey;
 }
  
+.mat-card {
+    width: 100%;
+    height: 180px;
+    margin: 0px 0px 5px 0px;
+    border-radius: 35px 35px 35px 35px;
+    border-color: rgb(66, 18, 66);
+    padding: 0px;
+    position: top;
+}

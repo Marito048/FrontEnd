@@ -5,8 +5,10 @@
     
 }
 .mat-card{
-    border-color: rgb(66, 18, 66);
+    margin: 0px;
+    padding: 1rem;
     border-radius: 35px;
+    border-color: rgb(66, 18, 66);
 
 }
 
