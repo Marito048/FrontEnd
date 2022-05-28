@@ -10,12 +10,14 @@
               [percent]="item.dominio"
               [radius]="100"
               [subtitle]="item.titulo"
-              [subtitleColor]="'#000000'"
-              [outerStrokeWidth]="16"
-              [innerStrokeWidth]="8"
-              [outerStrokeColor]="'#0000FF'"
-              [innerStrokeColor]="'#5178B3'"
+              [subtitleColor]="'#fff'"
+              [outerStrokeWidth]="10"
+              [innerStrokeWidth]="6"
+              [outerStrokeColor]="'#540307'"
+              [innerStrokeColor]="'#C7E596'"
               [animation]="true"
+              [lazy]="true"
+              [responsive]="true"
               [animationDuration]="500"
           ></circle-progress>
           <app-editbutton *ngIf="login" (click)="abrirModal(item.idskill)" class="d-flex align-items-center"></app-editbutton>
@@ -23,79 +25,4 @@
       </div>
   </div>
 </div>
-
-   <!--<div class="text-center col-sm-4 col-md-4 col-lg-4">
-      <circle-progress
-        [percent]="100"
-        [radius]="100"
-        [subtitle]="'Progreso'"
-        [subtitleColor]="'#000000'"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#5178B3'"
-        [innerStrokeColor]="'#5178B3'"
-        [animation]="true"
-        [animationDuration]="500"
-      ></circle-progress>
-    </div>
-
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-      <circle-progress
-        [percent]="100"
-        [radius]="100"
-        [subtitle]="'Progreso'"
-        [subtitleColor]="'#000000'"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#5178B3'"
-        [innerStrokeColor]="'#5178B3'"
-        [animation]="true"
-        [animationDuration]="500"
-      ></circle-progress>
-    </div>
-
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-      <circle-progress
-        [percent]="100"
-        [radius]="100"
-        [subtitle]="'Progreso'"
-        [subtitleColor]="'#000000'"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#5178B3'"
-        [innerStrokeColor]="'#5178B3'"
-        [animation]="true"
-        [animationDuration]="500"
-      ></circle-progress>
-    </div>
-
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-      <circle-progress
-        [percent]="100"
-        [radius]="100"
-        [subtitle]="'Progreso'"
-        [subtitleColor]="'#000000'"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#5178B3'"
-        [innerStrokeColor]="'#5178B3'"
-        [animation]="true"
-        [animationDuration]="500"
-      ></circle-progress>
-    </div>
-
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-      <circle-progress
-        [percent]="100"
-        [radius]="100"
-        [subtitle]="'Progreso'"
-        [subtitleColor]="'#000000'"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#5178B3'"
-        [innerStrokeColor]="'#5178B3'"
-        [animation]="true"
-        [animationDuration]="500"
-      ></circle-progress>
-    </div> -->
 

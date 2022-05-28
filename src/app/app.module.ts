@@ -70,7 +70,25 @@ import { BannerModalComponent } from './components/modales/banner-modal/banner-m
     AppRoutingModule,
     NgCircleProgressModule.forRoot({"responsive": true}),
     NgxScrollTopModule,
-    ReactiveFormsModule //se importa para usar en los formularios reactivos
+    ReactiveFormsModule, //se importa para usar en los formularios reactivos
+    NgCircleProgressModule.forRoot({
+      "backgroundGradient": true,
+      "backgroundColor": "#181616",
+      "backgroundGradientStopColor": "#e60505",
+      "backgroundStroke": "#050505",
+      "backgroundStrokeWidth": 4,
+      "backgroundPadding": -7,
+      "radius": 104,
+      "space": -8,
+      "maxPercent": 100,
+      "unitsColor": "#c5a507",
+      "outerStrokeWidth": 9,
+      "outerStrokeColor": "#540307",
+      "innerStrokeWidth": 7,
+      "titleColor": "#e1d014",
+      "subtitleColor": "#ffffff",
+      "responsive": true
+    })
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

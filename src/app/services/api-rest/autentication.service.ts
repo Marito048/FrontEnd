@@ -43,7 +43,7 @@ export class AutenticationService {
   IniciarSesion(username: string, password: string) {
     this.user.username = username;
     this.user.password = password;
-    console.log("llega aca?")
+    console.log("Entra a IniciarSesion")
       return this.http.post<any>(this.url2, this.user)
           .pipe(map(user => {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
