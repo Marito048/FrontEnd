@@ -1,8 +1,10 @@
+
 .row{
     background-color:rgb(221, 91, 4);
 }
 footer{
     color: #1e1f1c;
+    width: 100%;
     font-weight: 800;
     font-size: 14px;
     display: flex;

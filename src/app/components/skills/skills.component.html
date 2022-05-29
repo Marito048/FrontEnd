@@ -3,9 +3,9 @@
     <h1 style="text-align: center;">HABILIDADES</h1>
     <hr>
     <h3 style="text-align: center;">Duras y Blandas</h3>
-    <hr>
-       <div *ngFor="let item of skill; let indice=index" class="col-3">
-                <div class=" d-flex justify-content-center">
+    
+       <div *ngFor="let item of skill; let indice=index"  class="col-md-2">
+          <div class="d-flex justify-content-center" >
           
             <circle-progress
               [percent]="item.dominio"

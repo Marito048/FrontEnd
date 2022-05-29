@@ -1,12 +1,13 @@
 <div class="card mat-card">
-  <h2>Proyectos</h2>
+  <h1>PROYECTOS</h1>
+  <hr>
   <app-addbutton *ngIf="login" (click)="abrirModalAgregar()"></app-addbutton>
   <br>
   <br>
-  <div class="card mat-card"  *ngFor="let Pro of proyecto">
+  <div class=""  *ngFor="let Pro of proyecto">
     <div class="row g-0">
       <div class="col-md-4">
-        <img [src]="Pro.url" class="img-fluid rounded-start" alt="...">
+        <!-- <img [src]="Pro.url" class="img-fluid rounded-start" alt="..."> -->
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -18,7 +19,7 @@
           </div>
         </div>
           <p class="card-text">{{Pro.descripcion}}</p>
-          <a href="{{Pro.url}}" class="btn btn-primary" target="_blank">Click here</a>
+          <a href="{{Pro.url}}" class="btn btn-ligth" target="_blank">Ir al proyecto</a>
         </div>
       </div>
     </div>

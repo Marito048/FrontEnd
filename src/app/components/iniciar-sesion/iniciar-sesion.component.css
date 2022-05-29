@@ -6,4 +6,12 @@ p{
     color: yellow;
     font-style: bold;
 }
+.card{
+  border-color: rgb (66, 18, 66);
+  width: auto;
+  height: auto;
+  margin: 80px auto;
+ 
+}
+
 
