@@ -10,6 +10,8 @@ import { SkillsModalComponent } from '../modales/skills-modal/skills-modal.compo
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css']
 })
+
+
 export class SkillsComponent implements OnInit {
 
   login:any;
@@ -56,25 +58,7 @@ export class SkillsComponent implements OnInit {
 }
 
 
-  skills: any[] = [
- /*   {   porcentaje: 12,
-        area: "Git"
-  },
-    {   porcentaje: 92,
-      area: "LIDERAZGO"
-  },
-  {   porcentaje: 52,
-    area: "COMUNICACIÓN"
-},
-{   porcentaje: 42,
-  area: "MYSQL"
-},
-{   porcentaje: 10,
-  area: "JAVA"
-},
-{   porcentaje: 32,
-  area: "ANGULAR"
-}*/]; 
+  skills: any[] = []; 
 
 abrirModal(id:number){
   //utiliza el metodo open de NgbModal para abrir el modal. El parametro es el componente que se va a mostrar en el modal. "centred" se usa para centrar el modal.
@@ -88,10 +72,5 @@ abrirModal(id:number){
   })
 
 }
-/*
-isLoggedIn(): boolean {
 
-  return this.loginService.isLoggedIn();  
-}
-*/
 }

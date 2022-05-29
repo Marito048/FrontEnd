@@ -1,8 +1,11 @@
-import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
+import { NgxSpinnerModule } from "ngx-spinner";
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
@@ -65,6 +68,8 @@ import { BannerModalComponent } from './components/modales/banner-modal/banner-m
     
   ],
   imports: [
+    BrowserAnimationsModule,
+    NgxSpinnerModule,
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,

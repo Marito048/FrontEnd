@@ -10,8 +10,9 @@ header#mainHeader {
     height: 80px;
     align-items: center;
     margin: px;
-    position: top;
-    top:0;
+    position: absolute;
+    width: 88%;
+    top: 0px;
     z-index: 1;
   
 }
@@ -26,4 +27,12 @@ a{
 .inNav{
     display:flex;
     justify-content: flex-end;
+}
+.mat-card {
+    
+    margin: 0px 0px 5px 0px;
+    border-radius: 35px 35px 35px 35px;
+    border-color: rgb(66, 18, 66);
+    padding: 2px;
+    position: top;
 }

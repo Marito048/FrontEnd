@@ -32,3 +32,11 @@ h1{
 
     
 }
+.card-footer{
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+.card{
+    border: none;
+    
+}

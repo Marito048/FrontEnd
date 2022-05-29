@@ -27,6 +27,10 @@ export class LoginService {
   LogState() {
     return this.loggedo$.asObservable();
   }
- 
+  mantenerseLogueado(){
+    if(sessionStorage.getItem('currentUser')){
+      this.LogIn();
+    }
+  }
     
 }

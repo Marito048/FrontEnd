@@ -1,5 +1,5 @@
 <!-- Nav -->
-<nav class="social">
+<nav class="social justify-content-around">
     <!-- Redes -->
     <ul id="social d-flex">
         <li *ngFor="let link of socialLinks">
@@ -10,4 +10,5 @@
     <!-- Login Btn -->
     <button type="button" class="btn btn-primary" (click)="iniciarSesion()" *ngIf="!login">Login</button>
     <button type="button" class="btn btn-primary" (click)="cerrarSesion()" *ngIf="login">Logout</button>
+    
 </nav>
