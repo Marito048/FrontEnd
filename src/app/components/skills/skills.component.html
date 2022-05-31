@@ -11,7 +11,7 @@
         
           <div   class="d-flex skill justify-content-center" >
           
-            <circle-progress *ngIf="indice <=5"
+            <circle-progress
               [percent]="item.dominio"
               [radius]="100"
               [subtitle]="item.titulo"
@@ -31,28 +31,8 @@
          
         </div>
         
-        <div *ngFor="let item of skill; let indice=index"  class="col-md-2">
-          
-          <div   class="d-flex skill justify-content-center" >
-          
-          <circle-progress *ngIf="indice >3"
-            [percent]="item.dominio"
-            [radius]="100"
-            [subtitle]="item.titulo"
-            [subtitleColor]="'#000'"
-            [outerStrokeWidth]="4"
-            [innerStrokeWidth]="6"
-            [outerStrokeColor]="'#540307'"
-            [innerStrokeColor]="'#C7E596'"
-            [animation]="true"
-            [lazy]="true"
-            [responsive]="true"
-            [animationDuration]="500"
-          ></circle-progress>
-          
-          <app-editbutton *ngIf="login" (click)="abrirModal(item.idskill)" class="d-flex align-items-center"></app-editbutton>
-        </div>
-        </div>
+        
+       
       
     </div>
     </div> 
