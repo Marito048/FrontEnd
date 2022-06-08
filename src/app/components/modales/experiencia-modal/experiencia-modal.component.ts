@@ -11,7 +11,7 @@ import { ExperienciaService } from 'src/app/services/api-rest/experiencia.servic
 })
 export class ExperienciaModalComponent implements OnInit {
 
-  @Input()  id!:number; //recibe el id del elemento que se quiere editar
+  @Input()  id!:number; 
   @Input() expNueva!:boolean;
 
   experiencia!:Laboral;
@@ -27,16 +27,6 @@ export class ExperienciaModalComponent implements OnInit {
       fotourl: [''],
       persona: ['']
     })
-    /*  esto lo saque de la interface Educacion 
-    idlaboral?: number;
-    puesto: String;
-    descripcion: String;
-    empresa: String;
-    inicio: Date;
-    fin: Date;
-    fotourl: String;   
-    persona: number;
-    */
   
     
   }
@@ -62,29 +52,7 @@ export class ExperienciaModalComponent implements OnInit {
         );
 
   }
-  // guardarExperiencia(){
-  //   if(this.eduNueva){
-  //       this.crearExperiencia();      
-  //   }else{
-  //     this.actualizarExperiencia();
-  //   }
-
-  // }
-  // crearExperiencia(){
-  //   this.experienciaService.save(this.formulario.value).subscribe(
-  //     data => {
-  //       this.activeModal.close();
-  //     }
-  //   );
-  // }
-  // actualizarExperiencia(){
-  //   console.log(this.formulario.value)
-  //   this.experienciaService.update(this.id, this.formulario.value).subscribe(
-  //     data => {
-  //       this.activeModal.close();
-  //     }
-  //   );
-  // }
+  
   editarForm(exp:any){
     this.formulario.setValue( {
       idlaboral: exp.idlaboral,

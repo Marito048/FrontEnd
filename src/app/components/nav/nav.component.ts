@@ -31,12 +31,7 @@ export class NavComponent implements OnInit {
     this.autenticationServ.CerrarSesion();
     this.router.navigate(['home']);
   }
-  /*
-  isLoggedIn(): boolean {
 
-    return this.loginService.isLoggedIn();  
-  }
-  */
 
   getAll(){
     this.redesService.getAll().subscribe((redes) => {

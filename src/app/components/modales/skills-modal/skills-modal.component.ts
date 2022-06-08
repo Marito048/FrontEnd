@@ -11,8 +11,7 @@ import { Skill } from 'src/app/services/interface/Skill';
 })
 export class SkillsModalComponent implements OnInit {
 
-  @Input()  id!:number; //recibe el id del elemento que se quiere editar
-
+  @Input()  id!:number; 
   skill!: Skill;
   formulario!: FormGroup;
 

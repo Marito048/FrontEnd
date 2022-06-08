@@ -61,28 +61,10 @@ login:any;
   }
 
     
-    Proyectos: any[] = [
-
-      {
-        idproyecto: 1,
-        proyecto: 'Proyecto 1',
-        descrip: 'Esto es una descripción del proyecto 1.Lorem Ipsum is simply dummy tlkdfñldklñfkñldk slfk ñsalfksalñkf sñalkf salñkfsa lñkfñlak af lakñl klsñk lñk a slñk lask lfk f añflkas lñkfaslñk lk as añlksañl kflñ kaa afklñ kñlsk lñk  ñlfklñsk ñlsk alñ k ñlkflñsklskfsñ k',
-        url: 'https://github.com',
-        fotourl: "https://global-uploads.webflow.com/5f5a53e153805db840dae2db/6073fbf151fa4565d48572dc_GitHub_aprender-programaci%25C3%25B3n.jpeg",
-      },
-      {
-        idproyecto: 2,
-        proyecto: 'Proyecto 2',
-        descrip: 'Esto es una descripción del proyecto 2',
-        url: 'https://github.com',
-        fotourl: "https://global-uploads.webflow.com/5f5a53e153805db840dae2db/6073fbf151fa4565d48572dc_GitHub_aprender-programaci%25C3%25B3n.jpeg",
-      },
-      
-    ];
+    
     abrirModal(id:any){
-      //utiliza el metodo open de NgbModal para abrir el modal. El parametro es el componente que se va a mostrar en el modal. "centred" se usa para centrar el modal.
-      const modalRef = this.modalService.open(ProyectoModalComponent, { centered: true }   );   //{ centered: true }     
-      modalRef.componentInstance.id = id;     // pasa el id del elemento que se quiere editar al componente del modal
+      const modalRef = this.modalService.open(ProyectoModalComponent, { centered: true }   );       
+      modalRef.componentInstance.id = id;    
 
       
     modalRef.result.then((data) => {
@@ -99,9 +81,8 @@ login:any;
   }
 
   abrirModalAgregar(){
-    //utiliza el metodo open de NgbModal para abrir el modal. El parametro es el componente que se va a mostrar en el modal. "centred" se usa para centrar el modal.
     const modalRef = this.modalService.open(ProyectoModalComponent, { centered: true }   ); 
-    modalRef.componentInstance.proNuevo = this.proNuevo;     // pasa un buleano para avisar al modal que es un objeto a crear  //{ centered: true }     
+    modalRef.componentInstance.proNuevo = this.proNuevo;     
     
      modalRef.result.then((data) => {
       this.ngOnInit();
@@ -109,11 +90,6 @@ login:any;
       alert("no funciono")
     })
   }
-    /*
-    isLoggedIn(): boolean {
-
-      return this.loginService.isLoggedIn();  
-    }
-    */
+    
   }
   

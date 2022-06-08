@@ -17,7 +17,6 @@ export class SkillsComponent implements OnInit {
   login:any;
   
 
- //inyecta el servicio de modal
  constructor(private skillService:SkillService,  private modalService: NgbModal, private loginService:LoginService ) {}
   
  skill!: any [] ;
@@ -61,14 +60,12 @@ export class SkillsComponent implements OnInit {
   skills: any[] = []; 
 
 abrirModal(id:number){
-  //utiliza el metodo open de NgbModal para abrir el modal. El parametro es el componente que se va a mostrar en el modal. "centred" se usa para centrar el modal.
   const modalRef = this.modalService.open(SkillsModalComponent, { centered: true, size: 'sm' }   );   //{ centered: true }     
-  modalRef.componentInstance.id = id;      //pasa el id del elemento que se quiere editar al componente del modal
-  
+  modalRef.componentInstance.id = id;      
   modalRef.result.then((data) => {
     this.ngOnInit();
   }, (reason) => {
-    alert("no funciono")
+    alert("Algo anda Mal")
   })
 
 }

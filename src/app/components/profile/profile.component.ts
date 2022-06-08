@@ -39,9 +39,8 @@ export class ProfileComponent implements OnInit {
    
   
   abrirModal(id:any){
-    //utiliza el metodo open de NgbModal para abrir el modal. El parametro es el componente que se va a mostrar en el modal. "centred" se usa para centrar el modal.
     const modalRef = this.modalService.open(ProfileModalComponent, { centered: true }   );   //{ centered: true }     
-    modalRef.componentInstance.id = id;     // pasa el id del elemento que se quiere editar al componente del modal
+    modalRef.componentInstance.id = id;     
     
     modalRef.result.then((data) => {
       this.ngOnInit();
@@ -51,20 +50,6 @@ export class ProfileComponent implements OnInit {
   
   
   
-  
   }
 
-
-
-
-
-
-
-  //moverlo a un servicio
-  /*
-  isLoggedIn(): boolean {
-
-  return this.loginService.isLoggedIn();  
-}
-*/
 }

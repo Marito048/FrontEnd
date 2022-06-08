@@ -12,7 +12,7 @@ import { ProyectosService } from 'src/app/services/api-rest/proyectos.service';
 export class ProyectoModalComponent implements OnInit {
 
   
-  @Input()  id!:number; //recibe el id del elemento que se quiere editar
+  @Input()  id!:number; 
   @Input() proNuevo!:boolean;
 
   proyecto!:Proyecto;
@@ -26,13 +26,7 @@ export class ProyectoModalComponent implements OnInit {
       url: [''],
       persona: [''],
     })
-   /*  esto lo saque de la interface proyecto 
-    ideproyecto?: number;
-    titulo: String;
-    descripcion: string;
-    url: String; 
-    persona: number;
-    */
+
   }
 
  
@@ -46,11 +40,11 @@ export class ProyectoModalComponent implements OnInit {
   }
 
   getById(id: number) {
-   // console.log(this.id)
+  
     this.proyectoService.getById(id).subscribe (
             data => {
          this.proyecto = data; 
-         //console.log(this.proyecto)
+        
          this.editarForm(this.proyecto)
         }
         );

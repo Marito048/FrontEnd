@@ -11,7 +11,7 @@ import { EducacionService } from 'src/app/services/api-rest/educacion.service';
 })
 export class EducacionModalComponent implements OnInit {
 
-  @Input()  id!:number; //recibe el id del elemento que se quiere editar
+  @Input()  id!:number; 
   @Input() eduNueva!:boolean;
   educacion!:Educacion;
   formulario!:FormGroup
@@ -25,15 +25,7 @@ export class EducacionModalComponent implements OnInit {
       fotourl: [''],
       persona: ['']
     })
-    /*  esto lo saque de la interface Educacion 
-    ideducacion?: number;
-    titulo: String;
-    fechafin: Date;
-    institucion: String; 
-    institucionurl: String; 
-    fotourl: String;
-    persona: number;
-    */
+    
     
   }
   ngOnInit(): void {
